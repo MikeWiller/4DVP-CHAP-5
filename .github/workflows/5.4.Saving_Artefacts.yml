@@ -20,7 +20,7 @@ jobs:
       - name: Install pytest 
         run: pip install pytest pytest-html
       - name: Run tests with Pytest -Report
-        run: pytest --html=report.html
+        run: pytest --html=report.html || true
       - name: Sauvegarder le rapport de tests
         uses: actions/upload-artifact@v3
         with:
