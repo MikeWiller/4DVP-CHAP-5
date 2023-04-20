@@ -37,6 +37,7 @@ jobs:
 
       - name: Run tests
         run: |
+          poetry install pytest
           poetry run pytest
 
       - name: Build distributions
