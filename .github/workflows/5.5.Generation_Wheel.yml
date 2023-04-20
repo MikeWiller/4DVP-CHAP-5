@@ -37,7 +37,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pio install pytest
+          pip install pytest
           poetry run pytest
 
       - name: Build distributions
